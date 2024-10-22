@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import { v2 as cloudinary } from 'cloudinary';
 
 
-export const getUserProfile = async (params) => {
+export const getUserProfile = async (req, res) => {
     const {username} = req.params;
 
     try {
